@@ -1,11 +1,22 @@
-<template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-  </div>
+<template lang="pug">
+  #app
+    #nav
+      .navbar
+        .container
+          .navbar-content Shop
+            .button-burger
+              span.line.line-1
+              span.line.line-2
+              span.line.line-3
+            .navbar-list__wrapper
+              ul.navbar-list
+                li.navbar-item
+                  router-link(to="/") Home
+                li.navbar-item
+                  router-link(to="/about") About
+                li.navbar-item
+                  router-link(to="/cart") Cart <em>({{0}})</em>
+    router-view
 </template>
 <style lang="stylus">
 #app
