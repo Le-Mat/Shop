@@ -3,6 +3,7 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import Uimini from 'uimini/dist/css/uimini.css'
+import Card from './components/Card'
 
 Vue.use(Uimini)
 

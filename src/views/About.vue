@@ -1,3 +1,3 @@
 <template lang="pug">
-  .me
+  p Simple Text
 </template>
